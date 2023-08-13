@@ -16,9 +16,13 @@ footer{
     bottom: 0px;
 }
 main{
-    background-color: darkslategray;
-    width: 80%;
+    /* background-color: darkslategray; */
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
 }
 .Panel_left{
     background-color: rgb(206, 29, 29);
@@ -43,18 +47,36 @@ main{
 }
  /* Contenedor de Registro*/
 .containerPrincipalRegister{
-    background-color: darkseagreen;
+    margin-top: 20px;
+    background-color: rgb(162, 224, 232);
     
     width: 600px;
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* justify-items: center; */
 }
  .containerRegistro{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-items: center; */
+    /* justify-self: center; */
+    
  }
- .containerRegister label{
+
+ .containerRegistro label{
     width: 600px;
+    padding-top: 10px;
+ }
+ .BtnRegistro{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+ }
+ h1{
+    display: flex;
+    justify-content: center;
+    
+    
  }
