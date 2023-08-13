@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: darkred;
+    width: 100%;
+    height: 60px;
+}
+footer{
+    background: darkred;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+}
+main{
+    background-color: darkslategray;
+    width: 80%;
+    height: 100%;
+}
+.Panel_left{
+    background-color: rgb(206, 29, 29);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+}
+.listPanelLeft{
+    display: flex;
+    flex-direction: column;
+}
+.listPanelLeft li {
+    padding: 20px;
+    /* margin-top: 10px; */
+    background-color: rgb(128, 19, 19);
+    list-style: none;
+    
+
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
