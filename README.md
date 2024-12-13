@@ -1,10 +1,10 @@
-# Nuxt Minimal Starter
+# Tienda Online
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
-
-Make sure to install dependencies:
+Pasos para la instalacion 
+Se ubican dentro de la carpeta de la aplicacion
+y se ejecuta el siguiente comando para sastifacer las despendencias pueden usar el comando de su preferencia NPM PNPM YARN BUN:
 
 ```bash
 # npm
@@ -20,9 +20,9 @@ yarn install
 bun install
 ```
 
-## Development Server
+## Ejecutar el server
 
-Start the development server on `http://localhost:3000`:
+Utiliza cualquiera de estos comando `http://localhost:3000`:
 
 ```bash
 # npm
@@ -40,7 +40,7 @@ bun run dev
 
 ## Production
 
-Build the application for production:
+No utilizar:
 
 ```bash
 # npm
@@ -71,5 +71,3 @@ yarn preview
 # bun
 bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
