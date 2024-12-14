@@ -1,7 +1,7 @@
 <template>  
     <div>
         <button v-if="buttonType === 'button'" :class="`${colorsButton[color]} ${sizeButton[size]} text-white rounded-md font-bold border-2  shadow-md`">{{ title }}</button>
-        <NuxtLink v-else="buttonType === 'link'" to="/" :class="`${colorsButton[color]} ${sizeButton[size]} text-white rounded-md font-bold border-2  shadow-md`"></NuxtLink>        
+        <NuxtLink v-else="buttonType === 'link'" to="/" :class="`${colorsButton[color]} ${sizeButton[size]} text-white rounded-md font-bold border-2  shadow-md`">{{ title }}</NuxtLink>        
     </div>
 </template>
 <script lang="ts"> 
@@ -20,10 +20,10 @@ export default{
                 green:"bg-green-500 hover:bg-green-600 border-green-700"
             },
             sizeButton:{
-                small:"text-xs py-1 px-2",
-                default:"text-sm py-2 px-3",
-                large:"text-lg py-3 px-4",
-                extra_large:"text-xl py-4 px-5"
+                small:"text-sm py-1 px-2",
+                default:"text-md py-2 px-3",
+                large:"text-xl py-3 px-4",
+                extra_large:"text-2xl py-4 px-5"
             }
         }
     },
