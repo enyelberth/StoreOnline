@@ -1,9 +1,11 @@
 <template>  
     <div>
-        <button :class="`${colorsButton[color]} text-white px-3 py-2 rounded-md font-bold border-2  shadow-md`">{{ title }}</button>
+        <button v-if="buttonType === 'button'" :class="`${colorsButton[color]} ${sizeButton[size]} text-white rounded-md font-bold border-2  shadow-md`">{{ title }}</button>
+        <NuxtLink v-else="buttonType === 'link'" to="/" :class="`${colorsButton[color]} ${sizeButton[size]} text-white rounded-md font-bold border-2  shadow-md`"></NuxtLink>        
     </div>
 </template>
 <script lang="ts"> 
+import { NuxtLink } from '#build/components';
 import type { PropType } from 'vue';
 
 
@@ -18,10 +20,10 @@ export default{
                 green:"bg-green-500 hover:bg-green-600 border-green-700"
             },
             sizeButton:{
-                small:"",
-                default:"",
-                large:"",
-                extra_large:""
+                small:"text-xs py-1 px-2",
+                default:"text-sm py-2 px-3",
+                large:"text-lg py-3 px-4",
+                extra_large:"text-xl py-4 px-5"
             }
         }
     },
@@ -37,6 +39,9 @@ export default{
         size:{
             type:String as PropType<size>,
             required:true
+        },
+        buttonType:{
+            type: String as PropType<'button' | 'link'>,
         }
     }
 }

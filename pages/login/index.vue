@@ -2,7 +2,7 @@
         <div>
 
 
-            <Button title="Registrate" color="green" />
+            <Button title="Registrate" color="green" size="extra_large" buttonType="button"/>
                 
             <form action="" class="m-5 mx-[20%] mt-5">
                 <Label name="usuario" title="Usuario" />
@@ -10,7 +10,6 @@
                 <button class="bg-green-500 px-4 p-2 rounded-md border-2 border-black/60 text-white font-bold hover:scale-105">Iniciar session</button>
            
             </form>
-
         </div>
   </template>
   <script setup>
