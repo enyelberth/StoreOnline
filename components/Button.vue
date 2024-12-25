@@ -30,11 +30,11 @@ export default{
     props:{
         title:{
             type:String,
-            Required:true
+            default:"red"
         },
         color:{
             type:String as PropType<color>,
-            Required:true
+            default:"red"
         },
         size:{
             type:String as PropType<size>,
