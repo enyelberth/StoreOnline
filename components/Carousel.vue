@@ -73,11 +73,9 @@
   import { ref, onMounted, onBeforeUnmount } from 'vue';
   
   const dataCarousel = ref([
-      { name: "img1", src: "/img/carousel/carouse1.jpg" },
-      { name: "img2", src: "/img/carousel/carousel2.jpg" },
-      { name: "img3", src: "/img/carousel/carouse1.jpg" },
-      { name: "img4", src: "/img/carousel/carousel2.jpg" },
-      { name: "img5", src: "/img/carousel/carouse1.jpg" }
+      { name: "img1", src: "/1.png" },
+      { name: "img2", src: "/2.png" },
+
   ]);
   
   const currentIndex = ref(0);
